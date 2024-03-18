@@ -1,0 +1,86 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.head{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  padding: 2rem;
+}
+
+.Cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  background-color: gray;
+  border: 2px solid black;
+  flex: 2rem;
+  padding: 0.4rem;
+  margin: 1rem;
+  position: relative;
+}
+
+.card-1 h4,
+.card-2 h4,
+.card-3 h4 {
+  text-align: center;
+  width: 10rem;
+  display: block;
+  padding: 0.5rem; 
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.card-1 h4 {
+  background-color: rgb(255, 71, 123);
+}
+.card-2 h4 {
+  background-color: tomato;
+  color: white;
+
+}
+.card-3 h4 {
+  background-color: rgb(255, 230, 38);
+}
+
+
+.card-1 p, .card-2 p , .card-3 p {
+  display: block;
+  margin-top: 2rem;
+}
+  @media (min-width: 768px) and (max-width: 991px) {
+    .Cards {
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: space-between; 
+    }
+    .card-1,
+    .card-2 {
+      margin-bottom: 1rem;
+      width: 50%;
+    }
+    .card-3 {
+      flex-basis: 100%;
+    }
+  }
+  
+
+@media (max-width: 768px) {
+  .card-1,
+  .card-2,
+  .card-3 {
+      flex-basis: 100%;
+  }
+}
